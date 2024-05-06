@@ -1,8 +1,9 @@
 import './Home.css';
+import {Image} from 'antd'
 function Home() {
     return (
         <div className="home">
-            <h1>Жанр</h1>
+            
         </div>
     );
 }

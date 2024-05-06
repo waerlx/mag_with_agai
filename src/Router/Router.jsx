@@ -10,7 +10,7 @@ import Layout from "../Pages/Layout";
 
 export const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/"   ,
         element: <Layout />,
         errorElement: <NotFound />,
         children: [
