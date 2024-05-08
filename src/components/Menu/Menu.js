@@ -7,6 +7,7 @@ import Likes from '../../Pages/Likes/Likes';
 import MyBooks from '../../Pages/My books/MyBooks';
 import NotFound from '../../Pages/NotFound/NotFound';
 import Order from '../../Pages/Order/Odrer';
+import About from '../../Pages/About/About';
 import './Menu.css'
 
 import {
@@ -25,21 +26,22 @@ function Menu() {
                             <nav className='menu' >
                                 <ul className='menu flex'>
                                     <li>
-                                        <Link to="./Home">Home</Link>
+                                        <Link to="/">Home</Link>
                                     </li>
                                     <li>
-                                        <Link to="./Cart">About</Link>
+                                        <Link to="./About">About</Link>
                                     </li>
                                     <li>
                                         <Link to="./Catalog">Contact</Link>
                                     </li>
+                                    
                                 </ul>
                             </nav>
 
                             <Routes>
-                                <Route path="home" element={<Home />} />
+                                <Route path="/" element={<Home />} />
                                 <Route path="cart" element={<Cart />} />
-                                <Route path="catalog" element={<Catalog />} />
+                                <Route path="about" element={<About />} />
                                 <Route path="NotFound" element={<NotFound />} />
                             </Routes>
 
