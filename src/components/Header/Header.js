@@ -1,14 +1,27 @@
 import './Header.css';
-import {Image} from 'antd';
+import { Image } from 'antd';
 import Menu from '../Menu/Menu';
-import { Link } from 'react-router-dom';
+import Logo from '../Logo/Logo';
+import { AudioOutlined } from '@ant-design/icons';
+import SearchOn from '../Search/Search'
 function Header() {
     return (
-        <div>
-            
+        <>
+            <header>
+                <div className="container">
+                    <div className="wrap_header flex">
+                        <Logo />
+                        <SearchOn/>
+
+                        <Menu />
+                    </div>
+
+                </div>
+
+            </header>
 
 
-        </div>
+        </>
     )
 }
 export default Header;
